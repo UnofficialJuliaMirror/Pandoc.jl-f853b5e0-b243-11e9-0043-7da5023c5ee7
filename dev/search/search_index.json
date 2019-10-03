@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Pandoc.jl \n\n\nPandoc.jl\n is a package to allow easier interfacing with \nPandoc\n.\n\n\n\n\nInstall\n\n\nTo install Pandoc.jl, open the Julia package manager prompt and type:\n\n\n(\nv1\n.\n1\n)\n \npkg\n \nadd\n \nPandoc", 
+            "text": "Pandoc.jl \n \n\n\nPandoc.jl\n is a package to allow easier interfacing with \nPandoc\n.\n\n\n\n\nInstall\n\n\nTo install Pandoc.jl, open the Julia package manager prompt and type:\n\n\n(\nv1\n.\n1\n)\n \npkg\n \nadd\n \nPandoc", 
             "title": "Home"
         }, 
         {
