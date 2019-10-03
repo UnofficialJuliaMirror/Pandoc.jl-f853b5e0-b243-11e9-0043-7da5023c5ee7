@@ -1,0 +1,39 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Pandoc.jl \n\n\nPandoc.jl\n is a package to allow easier interfacing with \nPandoc\n.\n\n\n\n\nInstall\n\n\nTo install Pandoc.jl, open the Julia package manager prompt and type:\n\n\n(\nv1\n.\n1\n)\n \npkg\n \nadd\n \nPandoc", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#pandocjl", 
+            "text": "Pandoc.jl  is a package to allow easier interfacing with  Pandoc .", 
+            "title": "Pandoc.jl"
+        }, 
+        {
+            "location": "/#install", 
+            "text": "To install Pandoc.jl, open the Julia package manager prompt and type:  ( v1 . 1 )   pkg   add   Pandoc", 
+            "title": "Install"
+        }, 
+        {
+            "location": "/usage/", 
+            "text": "Usage\n\n\nYou will need to install \nPandoc\n. You can install it using your favorite package manager.\n\n\nTo use it in Julia, first add it:\n\n\n(\nv1\n.\n1\n)\n \nadd\n \nPandoc\n\n\n\n\n\n\nThen you can run the following:\n\n\njulia\n \nusing\n \nPandoc\n\n\njulia\n \nPandoc\n.\nparse\n(\n# header level 1\n)\n\n\n\n\n\n\nYou can also load a file from disk:\n\n\njulia\n \nusing\n \nPandoc\n\n\njulia\n \nPandoc\n.\nparse_file\n(\n./path/to/markdown_file.md\n)", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/usage/#usage", 
+            "text": "You will need to install  Pandoc . You can install it using your favorite package manager.  To use it in Julia, first add it:  ( v1 . 1 )   add   Pandoc   Then you can run the following:  julia   using   Pandoc  julia   Pandoc . parse ( # header level 1 )   You can also load a file from disk:  julia   using   Pandoc  julia   Pandoc . parse_file ( ./path/to/markdown_file.md )", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/api/", 
+            "text": "API\n\n\n#\n\n\nPandoc.Pandoc\n \n \nModule\n.\n\n\nPandoc\n\n\n\n\n\n\nPandoc wrapper to read JSON AST from \npandoc\n\n\nsource\n\n\n#\n\n\nPandoc.BlockQuote\n \n \nType\n.\n\n\nBlock quote (list of blocks)\n\n\nsource\n\n\n#\n\n\nPandoc.BulletList\n \n \nType\n.\n\n\nBullet list (list of items, each a list of blocks)\n\n\nsource\n\n\n#\n\n\nPandoc.Cite\n \n \nType\n.\n\n\nCitation (list of inlines)\n\n\nsource\n\n\n#\n\n\nPandoc.Code\n \n \nType\n.\n\n\nInline code (literal)\n\n\nsource\n\n\n#\n\n\nPandoc.CodeBlock\n \n \nType\n.\n\n\nCode block (literal) with attributes\n\n\nsource\n\n\n#\n\n\nPandoc.DefinitionList\n \n \nType\n.\n\n\nDefinition list Each list item is a pair consisting of a term (a list of inlines) and one or more definitions (each a list of blocks)\n\n\nsource\n\n\n#\n\n\nPandoc.Div\n \n \nType\n.\n\n\nGeneric block container with attributes\n\n\nsource\n\n\n#\n\n\nPandoc.Emph\n \n \nType\n.\n\n\nEmphasized text (list of inlines)\n\n\nsource\n\n\n#\n\n\nPandoc.Header\n \n \nType\n.\n\n\nHeader - level (integer) and text (inlines)\n\n\nsource\n\n\n#\n\n\nPandoc.HorizontalRule\n \n \nType\n.\n\n\nHorizontal rule\n\n\nsource\n\n\n#\n\n\nPandoc.Image\n \n \nType\n.\n\n\nImage: alt text (list of inlines), target\n\n\nsource\n\n\n#\n\n\nPandoc.LineBlock\n \n \nType\n.\n\n\nMultiple non-breaking lines\n\n\nsource\n\n\n#\n\n\nPandoc.LineBreak\n \n \nType\n.\n\n\nHard line break\n\n\nsource\n\n\n#\n\n\nPandoc.Link\n \n \nType\n.\n\n\nHyperlink: alt text (list of inlines), target\n\n\nsource\n\n\n#\n\n\nPandoc.Math\n \n \nType\n.\n\n\nTeX math (literal)\n\n\nsource\n\n\n#\n\n\nPandoc.Note\n \n \nType\n.\n\n\nFootnote or endnote\n\n\nsource\n\n\n#\n\n\nPandoc.OrderedList\n \n \nType\n.\n\n\nOrdered list (attributes and a list of items, each a list of blocks)\n\n\nsource\n\n\n#\n\n\nPandoc.Para\n \n \nType\n.\n\n\nParagraph\n\n\nsource\n\n\n#\n\n\nPandoc.Plain\n \n \nType\n.\n\n\nPlain text, not a paragraph\n\n\nsource\n\n\n#\n\n\nPandoc.Quoted\n \n \nType\n.\n\n\nQuoted text (list of inlines)\n\n\nsource\n\n\n#\n\n\nPandoc.RawBlock\n \n \nType\n.\n\n\nRaw block\n\n\nsource\n\n\n#\n\n\nPandoc.RawInline\n \n \nType\n.\n\n\nRaw inline\n\n\nsource\n\n\n#\n\n\nPandoc.SmallCaps\n \n \nType\n.\n\n\nSmall caps text (list of inlines)\n\n\nsource\n\n\n#\n\n\nPandoc.SoftBreak\n \n \nType\n.\n\n\nSoft line break\n\n\nsource\n\n\n#\n\n\nPandoc.Space\n \n \nType\n.\n\n\nInter-word space\n\n\nsource\n\n\n#\n\n\nPandoc.Span\n \n \nType\n.\n\n\nGeneric inline container with attributes\n\n\nsource\n\n\n#\n\n\nPandoc.Str\n \n \nType\n.\n\n\nText (string)\n\n\nsource\n\n\n#\n\n\nPandoc.Strikeout\n \n \nType\n.\n\n\nStrikeout text (list of inlines)\n\n\nsource\n\n\n#\n\n\nPandoc.Strong\n \n \nType\n.\n\n\nStrongly emphasized text (list of inlines)\n\n\nsource\n\n\n#\n\n\nPandoc.Subscript\n \n \nType\n.\n\n\nSubscripted text (list of inlines)\n\n\nsource\n\n\n#\n\n\nPandoc.Superscript\n \n \nType\n.\n\n\nSuperscripted text (list of inlines)\n\n\nsource\n\n\n#\n\n\nPandoc.Table\n \n \nType\n.\n\n\nTable, with caption, column alignments (required), relative column widths (0 = default), column headers (each a list of blocks), and rows (each a list of lists of blocks)\n\n\nsource", 
+            "title": "API"
+        }, 
+        {
+            "location": "/api/#api", 
+            "text": "#  Pandoc.Pandoc     Module .  Pandoc   Pandoc wrapper to read JSON AST from  pandoc  source  #  Pandoc.BlockQuote     Type .  Block quote (list of blocks)  source  #  Pandoc.BulletList     Type .  Bullet list (list of items, each a list of blocks)  source  #  Pandoc.Cite     Type .  Citation (list of inlines)  source  #  Pandoc.Code     Type .  Inline code (literal)  source  #  Pandoc.CodeBlock     Type .  Code block (literal) with attributes  source  #  Pandoc.DefinitionList     Type .  Definition list Each list item is a pair consisting of a term (a list of inlines) and one or more definitions (each a list of blocks)  source  #  Pandoc.Div     Type .  Generic block container with attributes  source  #  Pandoc.Emph     Type .  Emphasized text (list of inlines)  source  #  Pandoc.Header     Type .  Header - level (integer) and text (inlines)  source  #  Pandoc.HorizontalRule     Type .  Horizontal rule  source  #  Pandoc.Image     Type .  Image: alt text (list of inlines), target  source  #  Pandoc.LineBlock     Type .  Multiple non-breaking lines  source  #  Pandoc.LineBreak     Type .  Hard line break  source  #  Pandoc.Link     Type .  Hyperlink: alt text (list of inlines), target  source  #  Pandoc.Math     Type .  TeX math (literal)  source  #  Pandoc.Note     Type .  Footnote or endnote  source  #  Pandoc.OrderedList     Type .  Ordered list (attributes and a list of items, each a list of blocks)  source  #  Pandoc.Para     Type .  Paragraph  source  #  Pandoc.Plain     Type .  Plain text, not a paragraph  source  #  Pandoc.Quoted     Type .  Quoted text (list of inlines)  source  #  Pandoc.RawBlock     Type .  Raw block  source  #  Pandoc.RawInline     Type .  Raw inline  source  #  Pandoc.SmallCaps     Type .  Small caps text (list of inlines)  source  #  Pandoc.SoftBreak     Type .  Soft line break  source  #  Pandoc.Space     Type .  Inter-word space  source  #  Pandoc.Span     Type .  Generic inline container with attributes  source  #  Pandoc.Str     Type .  Text (string)  source  #  Pandoc.Strikeout     Type .  Strikeout text (list of inlines)  source  #  Pandoc.Strong     Type .  Strongly emphasized text (list of inlines)  source  #  Pandoc.Subscript     Type .  Subscripted text (list of inlines)  source  #  Pandoc.Superscript     Type .  Superscripted text (list of inlines)  source  #  Pandoc.Table     Type .  Table, with caption, column alignments (required), relative column widths (0 = default), column headers (each a list of blocks), and rows (each a list of lists of blocks)  source", 
+            "title": "API"
+        }
+    ]
+}
